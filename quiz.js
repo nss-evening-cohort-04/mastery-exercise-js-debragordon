@@ -23,11 +23,13 @@ function checkInput () {
 
 ////////// THE DETAILS OF THE SECOND FUNCTION //////////
 function growTree (treeObject) {
-var spaces = treeObject.height - 1;
-var char = treeObject.character;
-var charString = "";
-  for (var i = 0; i < treeObject.height; i += 1) {
+  var spaces = treeObject.height - 1;
+  var char = treeObject.character;
+  var charString = "";
+
+  for (var i = 0; i < treeObject.height; i++) {
     charString += char;
     console.log(charString);
+    charString += char;
   }
 }
