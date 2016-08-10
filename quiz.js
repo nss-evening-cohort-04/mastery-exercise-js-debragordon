@@ -25,7 +25,9 @@ function checkInput () {
 function growTree (treeObject) {
 var spaces = treeObject.height - 1;
 var char = treeObject.character;
-  for (var i = 0; i < treeObject.height; i++) {
-    console.log(char);
-    }
+var charString = "";
+  for (var i = 0; i < treeObject.height; i += 1) {
+    charString += char;
+    console.log(charString);
+  }
 }
