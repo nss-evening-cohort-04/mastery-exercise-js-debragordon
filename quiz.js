@@ -10,12 +10,12 @@ button.addEventListener("click", checkInput);
 
 ////////// THE DETAILS OF THE FIRST FUNCTION //////////
 function checkInput () {
-  if (treeHeight.value = "" || treeCharacter.value = "") {
+  if (treeHeight.value == "" || treeCharacter.value == "") {
     alert("Please enter both responses before clicking to grow your tree.");
   } else {
       var tree = {
-        height: treeHeight.value;
-        character: treeCharacter.value;
+        height: treeHeight.value,
+        character: treeCharacter.value,
       };
       growTree(tree);
   }
@@ -26,6 +26,6 @@ function growTree (treeObject) {
 var spaces = treeObject.height - 1;
 var char = treeObject.character;
   for (var i = 0; i < treeObject.height; i++) {
-    console.log(spaces + char);
+    console.log(char);
     }
 }
