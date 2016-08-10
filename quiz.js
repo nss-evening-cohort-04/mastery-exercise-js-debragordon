@@ -5,7 +5,7 @@ var treeCharacter = document.getElementById("character");
 
 var button = document.getElementById("makeTree");
 
-////////// INVOKING THE FUNCTION //////////
+////////// CLICK EVENT //////////
 button.addEventListener("click", checkInput);
 
 ////////// THE DETAILS OF THE FIRST FUNCTION //////////
@@ -28,7 +28,7 @@ function growTree (treeObject) {
   var charString = "";
 
   for (var i = 0; i < treeObject.height; i++) {
-    charString += char;
+    charString += char + spaces;
     console.log(charString);
     charString += char;
   }
