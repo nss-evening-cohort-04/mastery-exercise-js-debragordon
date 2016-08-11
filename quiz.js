@@ -27,9 +27,9 @@ function growTree (treeObject) {
   var char = treeObject.character;
   var charString = "";
 
-  for (var i = 0; i < treeObject.height; i++) {
-    charString += char + spaces;
-    console.log(charString);
+  for (var i = 0, j = spaces; i < treeObject.height; i++, j--) {
+    charString += char;
+    console.log(" ".repeat(j) + charString);
     charString += char;
   }
 }
