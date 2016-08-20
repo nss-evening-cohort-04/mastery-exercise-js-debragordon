@@ -8,6 +8,14 @@ var button = document.getElementById("makeTree");
 ////////// CLICK EVENT //////////
 button.addEventListener("click", checkInput);
 
+window.addEventListener("keypress", enter);
+
+function enter (event) {
+  if (event.keyCode == 13) {
+    checkInput();
+  }
+};
+
 ////////// THE DETAILS OF THE FIRST FUNCTION //////////
 function checkInput () {
   if (treeHeight.value == "" || treeCharacter.value == "") {
